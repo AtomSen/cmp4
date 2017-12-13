@@ -54,6 +54,7 @@
   <ItemGroup>
     <Content Include="gramatica.txt" />
     <Content Include="input.txt" />
+    <Content Include="TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

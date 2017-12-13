@@ -1,6 +1,9 @@
-﻿a,b,c
-AA
-AA
-AA->a,AA,b,AA
-AA->a,AA
-AA->c
+﻿ax,b,c,lz,e
+A,B,EXSAA
+A
+A->ax,B,b,B,EXSAA
+A->ax,A
+A->lz
+B->c
+B->e
+EXSAA->f,B,A

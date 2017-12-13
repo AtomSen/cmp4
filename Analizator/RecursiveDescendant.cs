@@ -97,8 +97,8 @@ namespace Analizator {
                         if (NonTerminals.IndexOf(beta.Peek()) >= 0 || beta.Peek() == startSymbol) {//e nonterminal sau simbol start
                             alfa.Push(beta.Pop() + (j + 1));
                             var rez = alfa.Peek();
-                            
-                            foreach (var x in productii[GetNonTerminal(rez)][GetProductionNumber(rez) - 1].Productii) {
+                            currentNonT = GetNonTerminal(rez);
+                            foreach (var x in productii[currentNonT][GetProductionNumber(rez) - 1].Productii) {
                                 beta.Push(x);
                             }
 
@@ -106,9 +106,9 @@ namespace Analizator {
                             if (i < n && beta.Peek() == input[i]) {
                                 i = i + 1;
                                 var rez = beta.Pop();
-                                var x = rez.Substring(0 , 1);
+                               
                                 j = 0;
-                                alfa.Push(x);
+                                alfa.Push(rez);
                             } else
                                 stare = Stare.revenire;
                         }
@@ -154,7 +154,7 @@ namespace Analizator {
                 Console.WriteLine("eroare");
             } else {
                 Console.WriteLine("Secventa e acceptata");
-                //construireSirProd(alfa);
+                construireSirProd(alfa);
             }
 
         }
@@ -175,11 +175,12 @@ namespace Analizator {
         private void construireSirProd(Stack<string> alfa) {
             string sir = "";
             while (alfa.Count > 0) {
-                if (int.Parse(alfa.Peek()) > 0) {
-                    sir = alfa.Peek() + ' ' + sir;
-                }
+                
+                    sir = GetProductionNumber(alfa.Peek()) + ' ' + sir;
+                
                 alfa.Pop();
             }
+            Console.WriteLine(sir);
         }
     }
 }
