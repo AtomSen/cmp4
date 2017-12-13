@@ -1,0 +1,7 @@
+D:\compilatoare\lab4\Analizator\Analizator\bin\Debug\Analizator.exe.config
+D:\compilatoare\lab4\Analizator\Analizator\bin\Debug\Analizator.exe
+D:\compilatoare\lab4\Analizator\Analizator\bin\Debug\Analizator.pdb
+D:\compilatoare\lab4\Analizator\Analizator\obj\Debug\Analizator.csprojResolveAssemblyReference.cache
+D:\compilatoare\lab4\Analizator\Analizator\obj\Debug\Analizator.csproj.CoreCompileInputs.cache
+D:\compilatoare\lab4\Analizator\Analizator\obj\Debug\Analizator.exe
+D:\compilatoare\lab4\Analizator\Analizator\obj\Debug\Analizator.pdb

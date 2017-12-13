@@ -1,0 +1,6 @@
+﻿a,b,c
+A
+A
+A->aAbA
+A->aA
+A->c
