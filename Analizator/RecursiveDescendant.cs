@@ -90,11 +90,16 @@ namespace Analizator {
             var currentNonT = startSymbol;
             int j = 0;
             while (stare != Stare.terminare && stare != Stare.eroare) {
+                Console.WriteLine(beta.Count);
                 if (stare == Stare.normala) {
-                    if (beta.Count() == 0 && i == n)
+                    if (beta.Count == 0 && i == n)
                         stare = Stare.terminare;
                     else {
-                        if (NonTerminals.IndexOf(beta.Peek()) >= 0 || beta.Peek() == startSymbol) {//e nonterminal sau simbol start
+                        if (beta.Count == 0) {
+                            stare = Stare.eroare;
+                            break;
+                        }
+                        if (NonTerminals.IndexOf(beta.Peek()) >= 0 || beta.Peek() == startSymbol ) {//e nonterminal sau simbol start
                             alfa.Push(beta.Pop() + (j + 1));
                             var rez = alfa.Peek();
                             currentNonT = GetNonTerminal(rez);
@@ -120,7 +125,7 @@ namespace Analizator {
                             var rez = alfa.Pop();
                             beta.Push(rez);
                         } else {
-                            if (GetProductionNumber(alfa.Peek()) < productii[currentNonT].Count()) {
+                            if (GetProductionNumber(alfa.Peek()) < productii[GetNonTerminal(alfa.Peek())].Count) {
                                 stare = Stare.normala;
                                 var rez = alfa.Pop();
 
@@ -137,7 +142,7 @@ namespace Analizator {
                                 alfa.Push(rez + ++nr);
                                 j++;
                             } else {
-                                if (i == 1 && currentNonT == startSymbol) {
+                                if (i == 1 && GetNonTerminal(alfa.Peek()) == startSymbol) {
                                     stare = Stare.eroare;
                                 } else {
                                     var rez = alfa.Pop();
