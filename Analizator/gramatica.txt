@@ -1,9 +1,10 @@
 ﻿ax,b,c,lz,e,f
-A,B,EXSAA
+A,B,EXSAA,Z
 A
-A->ax,B,b,B,EXSAA
+A->ax,B,b,B,EXSAA,Z
 A->ax,A
 A->lz
 B->c
 B->e
 EXSAA->f,B,A
+Z->A

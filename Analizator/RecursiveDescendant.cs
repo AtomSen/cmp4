@@ -100,13 +100,15 @@ namespace Analizator {
                             break;
                         }
                         if (NonTerminals.IndexOf(beta.Peek()) >= 0 || beta.Peek() == startSymbol ) {//e nonterminal sau simbol start
+                            j = 0;
                             alfa.Push(beta.Pop() + (j + 1));
+                            
                             var rez = alfa.Peek();
                             currentNonT = GetNonTerminal(rez);
                             foreach (var x in productii[currentNonT][GetProductionNumber(rez) - 1].Productii) {
                                 beta.Push(x);
                             }
-
+                            
                         } else {
                             if (i < n && beta.Peek() == input[i]) {
                                 i = i + 1;
@@ -146,7 +148,11 @@ namespace Analizator {
                                     stare = Stare.eroare;
                                 } else {
                                     var rez = alfa.Pop();
-                                    beta.Pop();
+                                    
+                                        for (var k = 0; k < productii[GetNonTerminal(rez)][GetProductionNumber(rez) - 1].Productii.Count; k++)
+                                        {
+                                            beta.Pop();
+                                        }
                                     beta.Push(GetNonTerminal(rez));
 
                                 }
