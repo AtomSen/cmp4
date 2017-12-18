@@ -100,6 +100,7 @@ namespace Analizator {
                             break;
                         }
                         if (NonTerminals.IndexOf(beta.Peek()) >= 0 || beta.Peek() == startSymbol ) {//e nonterminal sau simbol start
+                            j = 0;
                             alfa.Push(beta.Pop() + (j + 1));
                             var rez = alfa.Peek();
                             currentNonT = GetNonTerminal(rez);
@@ -159,7 +160,7 @@ namespace Analizator {
                 Console.WriteLine("eroare");
             } else {
                 Console.WriteLine("Secventa e acceptata");
-                construireSirProd(alfa);
+                //construireSirProd(alfa);
             }
 
         }

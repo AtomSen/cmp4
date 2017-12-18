@@ -5,3 +5,10 @@ D:\compilatoare\lab4\Analizator\Analizator\obj\Debug\Analizator.csprojResolveAss
 D:\compilatoare\lab4\Analizator\Analizator\obj\Debug\Analizator.csproj.CoreCompileInputs.cache
 D:\compilatoare\lab4\Analizator\Analizator\obj\Debug\Analizator.exe
 D:\compilatoare\lab4\Analizator\Analizator\obj\Debug\Analizator.pdb
+C:\Users\psebilsa\Downloads\Facultate\Semestrul 1\Limbaje formale si tehnici de compilare\Lab4\cmp4\Analizator\bin\Debug\Analizator.exe.config
+C:\Users\psebilsa\Downloads\Facultate\Semestrul 1\Limbaje formale si tehnici de compilare\Lab4\cmp4\Analizator\bin\Debug\Analizator.exe
+C:\Users\psebilsa\Downloads\Facultate\Semestrul 1\Limbaje formale si tehnici de compilare\Lab4\cmp4\Analizator\bin\Debug\Analizator.pdb
+C:\Users\psebilsa\Downloads\Facultate\Semestrul 1\Limbaje formale si tehnici de compilare\Lab4\cmp4\Analizator\obj\Debug\Analizator.csprojResolveAssemblyReference.cache
+C:\Users\psebilsa\Downloads\Facultate\Semestrul 1\Limbaje formale si tehnici de compilare\Lab4\cmp4\Analizator\obj\Debug\Analizator.csproj.CoreCompileInputs.cache
+C:\Users\psebilsa\Downloads\Facultate\Semestrul 1\Limbaje formale si tehnici de compilare\Lab4\cmp4\Analizator\obj\Debug\Analizator.exe
+C:\Users\psebilsa\Downloads\Facultate\Semestrul 1\Limbaje formale si tehnici de compilare\Lab4\cmp4\Analizator\obj\Debug\Analizator.pdb
