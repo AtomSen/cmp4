@@ -1,1 +1,1 @@
-﻿daca ( identificator <= constanta )
+﻿daca ( identificator <= constanta ) atunci { identificator + constanta ; } altfel { identificator = constanta + identificator ; } identificator = constanta + identificator ; identificator = constanta + identificator ;
