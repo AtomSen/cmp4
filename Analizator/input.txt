@@ -1,1 +1,1 @@
-﻿identificator
+﻿daca ( identificator <= constanta )
